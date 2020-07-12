@@ -1,4 +1,4 @@
-class Batsman2 {
+class Batsman {
 	
 	String name;
 	public int runsScored;
@@ -8,7 +8,7 @@ class Batsman2 {
 	public int fours;
 	public int sixes;
 	
-	public Batsman2(String name, int runsScored, int centuries, int halfCenturies, int ballsFaced, int fours, int sixes){
+	public Batsman(String name, int runsScored, int centuries, int halfCenturies, int ballsFaced, int fours, int sixes){
 		this.name = name;
 		this.runsScored = runsScored;
 		this.centuries = centuries;

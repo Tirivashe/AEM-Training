@@ -1,6 +1,6 @@
 package com.shamhu.tirivashe;
 
-class Player {
+abstract class Player implements Comparable<Player>{
 
 	private int id;
 	private String name;
@@ -23,6 +23,8 @@ class Player {
 	public String toString(){
 		return id + " " + name;
 	}
+		
+	public abstract float calcStrikeRate();
 }
 
 class Batsman extends Player {
@@ -73,6 +75,15 @@ class Batsman extends Player {
 		return super.getId() + " " + super.getName() + " " + runsScored + " " + centuries + " " + halfCenturies + " " + sixes + " " + fours + " " + ballsFaced;
 	}
 
+	public float calcStrikeRate() {
+		return runsScored / ballsFaced;
+	}
+
+	public int compareTo(Player temp) {
+		
+		return this.getName().compareToIgnoreCase(temp.getName());
+	}
+
 }
 
 class Bowler extends Player {
@@ -101,6 +112,20 @@ class Bowler extends Player {
 	public int getWickets() {
 		return wickets;
 	}
+	
+	public String toString(){
+		return "";
+	}
+
+	public float calcStrikeRate() {
+		return 0;
+	}
+
+	public int compareTo(Player arg0) {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
 
 }
 

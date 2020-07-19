@@ -16,6 +16,7 @@ public class NegArrayExpt {
 			System.err.println(e.getMessage() +  " - Cannot have a negative size array");
 		}
 		finally{
+			sc.close();
 			for(int i = 0; i < a; i++){
 				System.out.print("Enter a number: ");
 				numbers[i] = sc.nextInt();

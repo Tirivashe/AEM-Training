@@ -20,6 +20,7 @@ public class ArrExcept {
 			System.err.println(e.getMessage() +" - Error occured. Cannot add more");
 		}
 		finally{
+			sc.close();
 			System.out.println("People added where: ");
 			for(int i = 0; i < names.length; i++){
 				System.out.println(names[i]);

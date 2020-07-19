@@ -11,6 +11,7 @@ public class ArrStoExcept {
 		}catch(ArrayStoreException e){
 			System.out.println(e.getMessage() + " - wrong input type");
 		}finally{
+			scanner.close();
 			System.out.println(number[0]);
 		}
 

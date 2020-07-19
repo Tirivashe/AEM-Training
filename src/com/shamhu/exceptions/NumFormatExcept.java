@@ -19,6 +19,9 @@ public class NumFormatExcept {
 		}catch(NumberFormatException e){
 			System.err.println(e.getMessage() + " - Invalid input. Please enter a number");
 		}
+		finally{
+			sc.close();
+		}
 
 	}
 

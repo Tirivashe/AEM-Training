@@ -4,7 +4,6 @@ import java.util.*;
 public class ArithExcept {
 
 	public static void main(String[] args) {
-		int x = 3, y = 5, z = 0;
 		int result = 0;
 		Scanner sc = new Scanner(System.in);
 		System.out.println("Welcome to the division calculator");
@@ -21,6 +20,7 @@ public class ArithExcept {
 			System.err.println("Caught an error, can't divide by zero");
 		}
 		finally{
+			sc.close();
 			System.out.println("Calculation complete");
 		}
 
